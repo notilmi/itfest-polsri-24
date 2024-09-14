@@ -11,7 +11,7 @@ const Header = () => {
         className={cn(
           "max-w-screen-md mx-auto p-2 rounded-full",
           "flex flex-row justify-between",
-          "backdrop-blur-lg border"
+          "bg-white backdrop-blur-md border"
         )}
       >
         <div className="flex flex-row items-center gap-1">

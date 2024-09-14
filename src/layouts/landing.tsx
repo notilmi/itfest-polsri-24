@@ -1,15 +1,11 @@
-import Sidebar from "@/components/sidebar";
+import Header from "@/components/header";
 import { Outlet } from "react-router-dom";
 
 const LandingLayout = () => {
   return (
-    <div className="min-h-screen antialiased flex flex-row">
-      <div className="hidden md:flex">
-        <Sidebar className="relative" />
-      </div>
-      <div className="flex-1">
-        <Outlet />
-      </div>
+    <div className="min-h-screen antialiased flex flex-col">
+      <Header />
+      <Outlet />
     </div>
   );
 };

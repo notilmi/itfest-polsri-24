@@ -5,7 +5,7 @@ Hello World! We're Ready To Compete In POLSRI IT Festival 2024 In Web Design Com
 ### Our Team
 
 1. Achmad Ilmi Al Akbar
-2. Hafizh Riyadi
+2. Muhammad Hafizh Ryadi
 3. Kgs. M. Rafiussyakban
 
 ### How To Contribute?

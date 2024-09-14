@@ -6,8 +6,8 @@ const LandingPage = () => {
   return (
     <div className="flex flex-col gap-2">
       <HeroSection />
-      <FindInfluencerSection />
       <FeaturesSection />
+      <FindInfluencerSection />
     </div>
   );
 };

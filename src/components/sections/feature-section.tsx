@@ -16,13 +16,13 @@ export function FeaturesSection() {
         {grid.map((feature) => (
           <div
             key={feature.title}
-            className="relative bg-gradient-to-b dark:from-red-900 from-red-100 dark:to-red-950 to-white p-6 rounded-3xl overflow-hidden"
+            className="relative bg-gradient-to-b bg-red-500 p-6 rounded-3xl overflow-hidden hover:scale-95 hover:cursor-default transition ease-in-out duration-200"
           >
             <Grid size={20} />
-            <p className="text-xl font-bold text-neutral-800 dark:text-white relative z-20">
+            <p className="text-xl font-bold text-white relative z-20">
               {feature.title}
             </p>
-            <p className="text-neutral-600 dark:text-neutral-400 mt-4 text-base font-normal relative z-20">
+            <p className="text-white mt-4 text-base font-normal relative z-20">
               {feature.description}
             </p>
           </div>

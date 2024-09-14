@@ -6,7 +6,7 @@ import { Handshake, Menu } from "lucide-react";
 
 const Header = () => {
   return (
-    <header className="w-full fixed top-2 px-2 z-30 ">
+    <header className="w-full fixed top-2 px-2 z-50 ">
       <div
         className={cn(
           "max-w-screen-md mx-auto p-2 rounded-full",

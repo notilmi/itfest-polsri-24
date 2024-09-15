@@ -18,11 +18,10 @@ const PricingSection = () => {
     <div className="py-24 md:py-32 lg:py-48 max-w-screen-lg mx-auto">
       <div className="flex flex-col gap-2 mb-8">
         <h2 className="text-5xl font-bold text-center">
-          Dibuat Khusus Untukmu!
+          Paket Terbaik Menantimu!
         </h2>
         <p className="text-xl text-center text-neutral-600">
-          Kami Menawarkan Fitur Yang Memudahkanmu Dalam Menjalankan Kampanye
-          Endorsement
+        Temukan rencana yang sesuai dengan kebutuhan bisnis Anda.
         </p>
       </div>
       <PricingCard className="mt-4" {...pricing} />

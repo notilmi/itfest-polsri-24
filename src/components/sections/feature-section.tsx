@@ -12,11 +12,11 @@ export function FeaturesSection() {
           Endorsement
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 md:gap-2 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-2 max-w-7xl mx-auto">
         {grid.map((feature) => (
           <div
             key={feature.title}
-            className="relative bg-gradient-to-b bg-red-500 p-6 rounded-3xl overflow-hidden hover:scale-95 hover:cursor-default transition ease-in-out duration-200"
+            className="relative bg-gradient-to-b m-3 md:m-2 bg-red-500 p-6 rounded-3xl overflow-hidden hover:scale-105 hover:cursor-default transition ease-in-out duration-200"
           >
             <Grid size={20} />
             <p className="text-xl font-bold text-white relative z-20">

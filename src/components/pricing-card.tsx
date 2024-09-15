@@ -1,7 +1,7 @@
 import { PricingSchema } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { Calendar, Handshake } from "lucide-react";
+import { Calendar, CheckCircle2, Handshake } from "lucide-react";
 
 const PricingCard = ({
   currency,
@@ -13,7 +13,7 @@ const PricingCard = ({
   return (
     <div
       className={cn(
-        "flex flex-col md:flex-row flex-wrap items-center justify-center rounded-xl border",
+        "flex flex-col md:flex-row flex-wrap items-center justify-center rounded-xl border bg-white",
         className
       )}
     >
@@ -27,11 +27,10 @@ const PricingCard = ({
 
         <ul className="mt-4 space-y-2">
           {feature.map((item, index) => (
-            <li
-              key={index}
-              className="flex items-center space-x-2 text-neutral-800"
-            >
-              <span className="text-red-500">✔</span>
+            <li key={index} className="flex items-center space-x-2">
+              <span>
+                <CheckCircle2 className="text-red-500 size-4" />
+              </span>
               <span>{item}</span>
             </li>
           ))}

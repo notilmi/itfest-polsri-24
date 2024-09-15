@@ -16,14 +16,7 @@ const PricingCard = ({
 
         <p className="text-5xl font-extrabold mb-2">
           {currency}
-          {harga}/mo
-        </p>
-        <p className="text-neutral-800">
-          Fixed price
-          <br />
-          No minimum commitment.
-          <br />
-          Pause or cancel anytime.
+          {harga}
         </p>
 
         <ul className="mt-4 space-y-2">

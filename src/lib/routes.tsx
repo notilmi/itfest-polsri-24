@@ -4,6 +4,7 @@ import LandingLayout from "@/layouts/landing";
 import ErrorPage from "@/pages/default/error-pages";
 import LandingPage from "@/pages/landing";
 import AboutPage from "@/pages/about";
+import Pricing from "@/pages/pricing";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
         path: "/about",
         element: <AboutPage />,
       },
+      {
+        path: "/pricing",
+        element: <Pricing />,
+      }
     ],
   },
 ]);

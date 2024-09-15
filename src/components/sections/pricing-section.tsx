@@ -15,7 +15,7 @@ const pricing: PricingSchema = {
 
 const PricingSection = () => {
   return (
-    <div className="py-24 md:py-32 lg:py-48 max-w-screen-lg mx-auto">
+    <div className="py-18 md:py-24 max-w-screen-lg mx-auto">
       <div className="flex flex-col gap-2 mb-8">
         <h2 className="text-5xl font-bold text-center">
           Penawaran Terbaik Menantimu!

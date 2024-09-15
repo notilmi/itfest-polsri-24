@@ -2,6 +2,7 @@ import { PricingSchema } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Calendar, CheckCircle2, Handshake } from "lucide-react";
+import { Grid } from "./sections/feature-section";
 
 const PricingCard = ({
   currency,
@@ -13,10 +14,11 @@ const PricingCard = ({
   return (
     <div
       className={cn(
-        "flex flex-col md:flex-row flex-wrap items-center justify-center rounded-xl border bg-white",
+        "flex flex-col md:flex-row flex-wrap items-center justify-center rounded-xl border bg-white relative overflow-hidden",
         className
       )}
     >
+      <Grid size={20} />
       <div className={cn("mx-auto w-full md:w-1/2 p-8")}>
         <h2 className="text-2xl font-bold mb-4">{type}</h2>
 
@@ -45,7 +47,7 @@ const PricingCard = ({
           </Button>
         </div>
       </div>
-      <div className="overflow-hidden w-full md:w-1/2 ">
+      <div className="overflow-hidden w-full md:w-1/2 z-30">
         <img src="/pricing-img.png" alt="Gambar" />
       </div>
     </div>

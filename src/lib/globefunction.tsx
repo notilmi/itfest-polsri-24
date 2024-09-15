@@ -20,7 +20,7 @@ export const globeConfig = {
   autoRotate: true,
   autoRotateSpeed: 0.5,
 };
-const colors = ["#FFFFFF", "#3b82f6", "#6366f1"];
+const colors = ["#dc2626", "#dc2626", "#991b1b"];
 export const sampleArcs = [
   {
     order: 1,

@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 function EventPage() {
   return (
     <div className="flex flex-col gap-8 py-12">
-      <div className="py-16 mt-4 md:mt-0 md:py-20 lg:py-24 relative w-full overflow-hidden  flex flex-col items-center justify-center p-4 md:border-b">
+      <div className="py-16 mt-4 md:mt-0 md:py-20 border-b lg:py-24 relative w-full overflow-hidden  flex flex-col items-center justify-center p-4 md:border-b">
         <Boxes className="hidden md:flex" />
         <motion.div
           initial={{

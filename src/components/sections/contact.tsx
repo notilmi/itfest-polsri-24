@@ -3,7 +3,7 @@ import { Grid } from "./feature-section";
 
 const ContactSection = () => {
   return (
-    <div className="relative overflow-hidden py-18 max-w-screen-lg mx-auto items-center">
+    <div className="relative overflow-hidden py-18 max-w-screen-lg m-4 lg:mx-auto items-center">
       <Grid size={25} />
       <div className="flex flex-col gap-2 mb-8">
         <div className="w-full max-w-6xl p-6 bg-white rounded-lg border-solid border-2 flex flex-col md:flex-row items-center justify-between">

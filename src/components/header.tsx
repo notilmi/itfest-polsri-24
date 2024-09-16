@@ -4,8 +4,14 @@ import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 import { Menu } from "lucide-react";
 import GoToDashboardButton from "./go-to-dashboad-button";
+import React from "react";
+import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "./ui/sheet";
+import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
+import LandingSidebarSheet from "./landing-sidebar-sheet";
 
 const Header = () => {
+  const [open, setOpen] = React.useState<boolean>(false);
+
   return (
     <header className="w-full fixed top-2 px-2 z-50 ">
       <div
@@ -30,13 +36,23 @@ const Header = () => {
           ))}
         </div>
         <GoToDashboardButton className="hidden lg:flex" isRounded />
-        <Button
-          variant="ghost"
-          size="icon"
-          className="flex lg:hidden rounded-full"
-        >
-          <Menu className="size-6" />
-        </Button>
+        <Sheet open={open} onOpenChange={setOpen}>
+          <SheetTrigger asChild>
+            <Button
+              variant="ghost"
+              size="icon"
+              className="flex lg:hidden rounded-full"
+            >
+              <Menu className="size-6" />
+            </Button>
+          </SheetTrigger>
+          <VisuallyHidden>
+            <SheetTitle>Influencify</SheetTitle>
+          </VisuallyHidden>
+          <SheetContent side="left" className="sm:max-w-xs">
+            <LandingSidebarSheet onOpenChange={setOpen} />
+          </SheetContent>
+        </Sheet>
       </div>
     </header>
   );

@@ -14,10 +14,9 @@ import MobileSidebarSheet from "./mobile-sidebar-sheet";
 
 const DashboardHeader = () => {
   const [open, setOpen] = React.useState<boolean>(false);
-  console.log("setOpen", open);
 
   return (
-    <div className="flex flex-row lg:flex-row-reverse items-center justify-between bg-white rounded-lg p-4 border">
+    <div className="flex flex-row items-center justify-between bg-white rounded-lg p-4 border">
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger asChild>
           <Button size="icon" variant="outline" className="flex lg:hidden">
@@ -31,6 +30,10 @@ const DashboardHeader = () => {
           <MobileSidebarSheet onOpenChange={setOpen} />
         </SheetContent>
       </Sheet>
+      <div className="flex-row hidden lg:flex items-center gap-2">
+        <img src="/influencify-squared.svg" className="size-10 rounded-full" />
+        <h2 className="text-xl font-bold">Influencify</h2>
+      </div>
       <div className="flex items-center gap-2">
         <Input placeholder="Cari Sesuatu..." />
         <Avatar>

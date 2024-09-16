@@ -16,7 +16,7 @@ const DashboardHeader = () => {
   const [open, setOpen] = React.useState<boolean>(false);
 
   return (
-    <div className="flex flex-row items-center justify-between bg-white rounded-lg p-4 border">
+    <div className="flex flex-row items-center gap-2 justify-between bg-white rounded-lg p-4 border">
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger asChild>
           <Button size="icon" variant="outline" className="flex lg:hidden">

@@ -49,7 +49,7 @@ const Header = () => {
           <VisuallyHidden>
             <SheetTitle>Influencify</SheetTitle>
           </VisuallyHidden>
-          <SheetContent side="left" className="sm:max-w-xs">
+          <SheetContent side="right" className="sm:max-w-xs">
             <LandingSidebarSheet onOpenChange={setOpen} />
           </SheetContent>
         </Sheet>

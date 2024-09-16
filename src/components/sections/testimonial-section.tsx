@@ -39,7 +39,7 @@ export default function TestimonialSection() {
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <Card className="bg-primary text-primary-foreground border-none relative overflow-hidden">
+        <Card className="bg-primary text-primary-foreground border-none relative overflow-hidden hover:scale-105 transition ease-in-out duration-150">
           <Grid size={20} />
           <CardContent className="p-6">
             <div className="text-primary-foreground text-8xl mb-4 font-bricolague">
@@ -67,7 +67,10 @@ export default function TestimonialSection() {
         </Card>
         <div className="space-y-8">
           {testimonials.slice(1).map((testimonial, index) => (
-            <Card key={index} className="border border-border">
+            <Card
+              key={index}
+              className="border border-border hover:scale-105 transition ease-in-out duration-150"
+            >
               <CardContent className="p-6">
                 <div className="text-primary text-4xl mb-2">"</div>
                 <p className="text-foreground mb-4">{testimonial.quote}</p>

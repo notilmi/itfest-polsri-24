@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 import { Handshake, Menu } from "lucide-react";
+import GoToDashboardButton from "./go-to-dashboad-button";
 
 const Header = () => {
   return (
@@ -28,9 +29,7 @@ const Header = () => {
             </Link>
           ))}
         </div>
-        <Button className="hidden lg:flex rounded-full">
-          Mulai Bekerjasama <Handshake className="ml-2 size-4" />
-        </Button>
+        <GoToDashboardButton isRounded />
         <Button
           variant="ghost"
           size="icon"

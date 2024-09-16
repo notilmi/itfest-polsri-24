@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Calendar, CheckCircle2, Handshake } from "lucide-react";
 import { Grid } from "./sections/feature-section";
+import GoToDashboardButton from "./go-to-dashboad-button";
 
 const PricingCard = ({
   currency,
@@ -39,9 +40,7 @@ const PricingCard = ({
         </ul>
 
         <div className="mt-6 flex flex-col md:flex-row gap-2">
-          <Button variant={"default"}>
-            Mulai Bekerja Sama <Handshake className="ml-2 size-4" />
-          </Button>
+          <GoToDashboardButton />
           <Button variant={"secondary"}>
             Jadwalkan Demo <Calendar className="ml-2 size-4" />
           </Button>

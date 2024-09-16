@@ -29,7 +29,7 @@ const Header = () => {
             </Link>
           ))}
         </div>
-        <GoToDashboardButton isRounded />
+        <GoToDashboardButton className="hidden md:flex" isRounded />
         <Button
           variant="ghost"
           size="icon"

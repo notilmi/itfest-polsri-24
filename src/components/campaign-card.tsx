@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import React from "react";
+import { Grid } from "./sections/feature-section";
 
 interface CampaignCardProps {
   title: string;
@@ -17,7 +18,8 @@ export default function CampaignCard({
   percentage,
 }: CampaignCardProps) {
   return (
-    <Card>
+    <Card className="relative overflow-hidden">
+      <Grid size={10} />
       <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
         <CardTitle className="text-sm font-medium">{title}</CardTitle>
         <div className="text-muted-foreground">{icon}</div>

@@ -21,11 +21,7 @@ export const LandingRoutes: RouteType[] = [
     route: "/about",
   },
   {
-    name: "Pricing",
-    route: "/#pricing",
-  },
-  {
-    name: "Event",
+    name: "Our Events",
     route: "/event",
   },
 ];

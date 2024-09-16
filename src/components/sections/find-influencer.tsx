@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const FindInfluencerSection = () => {
   return (
-    <div className="flex flex-row  items-center justify-center py-18 md:py-24 h-screen md:h-auto dark:bg-black bg-white relative w-full">
+    <div className="flex-row hidden md:flex items-center justify-center py-24 md:py-28 h-screen md:h-auto dark:bg-black bg-white relative w-full">
       <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-full md:h-[40rem] px-4">
         <motion.div
           initial={{

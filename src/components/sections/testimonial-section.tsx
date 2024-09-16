@@ -28,7 +28,7 @@ const testimonials = [
 
 export default function TestimonialSection() {
   return (
-    <div className="container mx-auto px-4 py-18 md:py-24 max-w-screen-xl">
+    <div className="container mx-auto px-4 py-24 md:py-28 max-w-screen-xl">
       <div className="flex flex-col gap-2 mb-8 max-w-screen-md mx-auto">
         <h2 className="text-5xl font-bold text-center">
           Apa Kata Pengguna Kami?

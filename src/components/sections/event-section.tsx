@@ -64,7 +64,7 @@ const EventCard: React.FC<EventCardProps> = ({ date, title, image, desc }) => {
 
 function EventSection() {
   return (
-    <div className="container mx-auto px-4 max-w-screen-lg py-8">
+    <div className="container mx-auto px-4 max-w-screen-lg py-24 md:py-28">
       <h2 className="italic text-gray-500">Past events</h2>
       <h2 className="text-2xl font-semibold mb-6">Kegiatan Sebelumnya</h2>
 

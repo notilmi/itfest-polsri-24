@@ -1,3 +1,4 @@
+import FAQSection from "@/components/sections/faq-section";
 import { FeaturesSection } from "@/components/sections/feature-section";
 import FindInfluencerSection from "@/components/sections/find-influencer";
 import HeroSection from "@/components/sections/hero";
@@ -12,6 +13,7 @@ const LandingPage = () => {
       <FindInfluencerSection />
       <PricingSection />
       <TestimonialSection />
+      <FAQSection />
     </div>
   );
 };

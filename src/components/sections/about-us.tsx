@@ -6,7 +6,7 @@ export function AboutUsSection() {
   const [isHovered, setIsHovered] = useState(false);
   return (
     <>
-      <div className="py-16 mt-4 md:mt-0 md:py-20 lg:py-24 relative w-full overflow-hidden  flex flex-col items-center justify-center p-4 md:border-b">
+      <div className="py-24 md:py-28  mt-4 md:mt-0 relative w-full overflow-hidden  flex flex-col items-center justify-center p-4 md:border-b">
         <Boxes className="hidden md:flex" />
         <motion.div
           initial={{

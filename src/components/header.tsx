@@ -2,7 +2,7 @@ import { LandingRoutes } from "@/data/routes";
 import { cn } from "@/lib/utils";
 import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
-import { Handshake, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import GoToDashboardButton from "./go-to-dashboad-button";
 
 const Header = () => {

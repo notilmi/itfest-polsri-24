@@ -1,7 +1,7 @@
 import { PricingSchema } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { Calendar, CheckCircle2, Handshake } from "lucide-react";
+import { Calendar, CheckCircle2 } from "lucide-react";
 import { Grid } from "./sections/feature-section";
 import GoToDashboardButton from "./go-to-dashboad-button";
 

@@ -32,15 +32,14 @@ export const DashboardRoutes: RouteIconsType[] = [
     route: "/dashboard",
     icon: <Gauge />,
   },
-
-  {
-    name: "Sewa Influencer",
-    route: "/dashboard/hire",
-    icon: <UserPlus />,
-  },
   {
     name: "Analisis",
-    route: "/dashboard#",
+    route: "/analytics",
     icon: <ChartLine />,
+  },
+  {
+    name: "Sewa Influencer",
+    route: "#",
+    icon: <UserPlus />,
   },
 ];

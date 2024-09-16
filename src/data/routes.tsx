@@ -1,3 +1,5 @@
+import { ChartLine, Gauge, UserPlus } from "lucide-react";
+
 export type RouteIconsType = {
   icon: React.ReactNode;
   name: string;
@@ -26,4 +28,22 @@ export const LandingRoutes: RouteType[] = [
     name: "Event",
     route: "/companyEvent",
   }
+];
+
+export const DashboardRoutes: RouteIconsType[] = [
+  {
+    name: "Dashboard",
+    route: "/dashboard",
+    icon: <Gauge />,
+  },
+  {
+    name: "Analisis",
+    route: "/analytics",
+    icon: <ChartLine />,
+  },
+  {
+    name: "Sewa Influencer",
+    route: "#",
+    icon: <UserPlus />,
+  },
 ];

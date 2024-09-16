@@ -4,10 +4,11 @@ import LandingLayout from "@/layouts/landing";
 import ErrorPage from "@/pages/default/error-pages";
 import LandingPage from "@/pages/landing";
 import AboutPage from "@/pages/about";
+import DashboardLayout from "@/layouts/dashboard";
+import DashboardPage from "@/pages/dashboard";
 
 const router = createBrowserRouter([
   {
-    path: "/",
     element: <LandingLayout />,
     errorElement: <ErrorPage />,
     children: [
@@ -18,6 +19,15 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <AboutPage />,
+      },
+    ],
+  },
+  {
+    element: <DashboardLayout />,
+    children: [
+      {
+        path: "/dashboard",
+        element: <DashboardPage />,
       },
     ],
   },

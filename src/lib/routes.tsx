@@ -4,6 +4,7 @@ import LandingLayout from "@/layouts/landing";
 import ErrorPage from "@/pages/default/error-pages";
 import LandingPage from "@/pages/landing";
 import AboutPage from "@/pages/about";
+import CompanyEvent from "@/pages/companyEvent";
 import DashboardLayout from "@/layouts/dashboard";
 import DashboardPage from "@/pages/dashboard";
 import AnalyticsPage from "@/pages/analytics";
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
         path: "/about",
         element: <AboutPage />,
       },
+      {
+        path: "/event",
+        element: <CompanyEvent />,
+      }
     ],
   },
   {

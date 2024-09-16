@@ -6,6 +6,7 @@ import LandingPage from "@/pages/landing";
 import AboutPage from "@/pages/about";
 import DashboardLayout from "@/layouts/dashboard";
 import DashboardPage from "@/pages/dashboard";
+import AnalyticsPage from "@/pages/analytics";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "/dashboard",
         element: <DashboardPage />,
+      },
+      {
+        path: "/analytics",
+        element: <AnalyticsPage />,
       },
     ],
   },

@@ -3,7 +3,7 @@ import { Boxes } from "../ui/background-boxes";
 import { motion } from "framer-motion";
 
 export function AboutUsSection() {
-  const [isHovered, setIsHovered] = useState(false);
+  const [_, setIsHovered] = useState(false);
   return (
     <>
       <div className="py-24 md:py-28  mt-4 md:mt-0 relative w-full border-b overflow-hidden  flex flex-col items-center justify-center p-4 md:border-b">

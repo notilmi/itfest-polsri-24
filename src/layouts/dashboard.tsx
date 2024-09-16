@@ -9,8 +9,8 @@ const DashboardLayout = () => {
         <aside className="fixed inset-y-0 left-0 z-10 hidden w-14 flex-col border-r bg-background md:flex">
           <DashboardSidebar />
         </aside>
-        <main className="flex bg-red-500 ml-0 md:ml-14">
-          <div className="flex-1 max-w-screen-lg bg-blue-500 mx-auto">
+        <main className="flex ml-0 md:ml-14 min-h-screen p-4">
+          <div className="flex-1 max-w-screen-lg mx-auto">
             <Outlet />
           </div>
         </main>

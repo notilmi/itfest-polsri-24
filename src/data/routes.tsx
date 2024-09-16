@@ -40,7 +40,7 @@ export const DashboardRoutes: RouteIconsType[] = [
   },
   {
     name: "Analisis",
-    route: "/dashboard/analytics",
+    route: "/dashboard#",
     icon: <ChartLine />,
   },
 ];

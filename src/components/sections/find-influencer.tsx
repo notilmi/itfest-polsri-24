@@ -3,6 +3,7 @@ import { World } from "@/components/ui/globe";
 import { globeConfig, sampleArcs } from "@/lib/globefunction";
 import { motion } from "framer-motion";
 import { Search } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const FindInfluencerSection = () => {
   return (
@@ -22,7 +23,7 @@ const FindInfluencerSection = () => {
           }}
           className="div"
         >
-          <div className="flex flex-col items-center text-center max-w-screen-md mx-auto z-20">
+          <div className="flex flex-col items-center text-center max-w-screen-md mx-auto z-40">
             <h2 className="text-center text-xl md:text-5xl font-bold text-black dark:text-white">
               Temukan Influencer Dari Seluruh Belahan Dunia
             </h2>
@@ -30,9 +31,11 @@ const FindInfluencerSection = () => {
               Kami Telah Bekerjasama Dengan 9129 Influencer Dari 149+ Lebih
               Negara
             </p>
-            <Button className="mt-4 z-20">
-              Temukan Influencer Terbaik <Search className="size-4 ml-2" />
-            </Button>
+            <Link to="/dashboard" className="z-20">
+              <Button className="mt-4">
+                Temukan Influencer Terbaik <Search className="size-4 ml-2" />
+              </Button>
+            </Link>
           </div>
         </motion.div>
         <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />

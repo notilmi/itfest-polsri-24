@@ -4,10 +4,10 @@ import LandingLayout from "@/layouts/landing";
 import ErrorPage from "@/pages/default/error-pages";
 import LandingPage from "@/pages/landing";
 import AboutPage from "@/pages/about";
-import CompanyEvent from "@/pages/companyEvent";
 import DashboardLayout from "@/layouts/dashboard";
 import DashboardPage from "@/pages/dashboard";
 import AnalyticsPage from "@/pages/analytics";
+import EventPage from "@/pages/event";
 
 const router = createBrowserRouter([
   {
@@ -24,8 +24,8 @@ const router = createBrowserRouter([
       },
       {
         path: "/event",
-        element: <CompanyEvent />,
-      }
+        element: <EventPage />,
+      },
     ],
   },
   {

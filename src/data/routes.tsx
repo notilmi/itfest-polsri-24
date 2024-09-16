@@ -26,8 +26,8 @@ export const LandingRoutes: RouteType[] = [
   },
   {
     name: "Event",
-    route: "/companyEvent",
-  }
+    route: "/event",
+  },
 ];
 
 export const DashboardRoutes: RouteIconsType[] = [

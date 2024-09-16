@@ -1,7 +1,8 @@
 import { Boxes } from "@/components/ui/background-boxes";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { Calendar, DoorOpen } from "lucide-react";
+import { Calendar, Gauge } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -31,10 +32,12 @@ const HeroSection = () => {
             mengagumkan dalam waktu singkat
           </h2>
           <div className="flex flex-row gap-2">
-            <Button>
-              <DoorOpen className="size-4 mr-2" />
-              Mulai Sekarang
-            </Button>
+            <Link to="/dashboard">
+              <Button>
+                <Gauge className="size-4 mr-2" />
+                Pergi Ke-Dashboard
+              </Button>
+            </Link>
             <Button variant="secondary">
               <Calendar className="mr-2 size-4" /> Jadwalkan Demo
             </Button>

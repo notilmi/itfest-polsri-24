@@ -20,8 +20,8 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="#pricing" className="text-slate-950 m-4 hover:underline">
-                Pricing
+              <a href="/event" className="text-slate-950 m-4 hover:underline">
+                Our Events
               </a>
             </li>
             <li>

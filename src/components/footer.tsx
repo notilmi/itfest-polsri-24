@@ -15,17 +15,17 @@ const Footer = () => {
           </a>
           <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
             <li>
-              <a href="#" className="text-slate-950 m-4 hover:underline">
+              <a href="/about" className="text-slate-950 m-4 hover:underline">
                 About
               </a>
             </li>
             <li>
-              <a href="#" className="text-slate-950 m-4 hover:underline">
+              <a href="#pricing" className="text-slate-950 m-4 hover:underline">
                 Pricing
               </a>
             </li>
             <li>
-              <a href="#" className="text-slate-950 m-4 hover:underline">
+              <a href="/about" className="text-slate-950 m-4 hover:underline">
                 Contact
               </a>
             </li>
